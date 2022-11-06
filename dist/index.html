@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type & Speak</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="./img/speech.png" alt="">
+        <form class="form">
+            <div class="text-area">
+                <textarea name="" id="text-input" placeholder="Type anything..."></textarea>
+            </div>
+            <div class="rate">
+                <div class="info">
+                    <label for="rate">Rate</label>
+                    <div class="rate-value">1</div>
+                </div>
+                <input type="range" id="rate" min="0.5" max="2" value="1" step=".1">
+            </div>
+            <div class="pitch">
+                <div class="info">
+                    <label for="pitch">Pitch</label>
+                    <div class="pitch-value">1</div>
+                </div>
+                <input type="range" id="pitch" min="0" max="2" value="1" step=".1">
+            </div>
+            <div class="voice">
+                <select id="voice-select"></select>
+            </div>
+            <button class="btn">Speak it</button>
+        </form>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
